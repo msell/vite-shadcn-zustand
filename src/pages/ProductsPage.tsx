@@ -22,10 +22,8 @@ const Products: FC = () => {
     )
   }
 
-  // Example handler for adding to cart
   const handleAddToCart = (product: Product) => {
     console.log('Adding to cart:', product)
-    // Implement your cart logic here
   }
 
   return (
