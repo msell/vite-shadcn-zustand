@@ -22,17 +22,13 @@ const Products: FC = () => {
     )
   }
 
-  const handleAddToCart = (product: Product) => {
-    console.log('Adding to cart:', product)
-  }
-
   return (
     <div className="container py-8 mx-auto">
       <h1 className="mb-8 text-3xl font-bold">Our Products</h1>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {products.map((product) => (
           <div key={product.id} className="mx-auto">
-            <ProductCard product={product} onAddToCart={handleAddToCart} />
+            <ProductCard product={product} />
           </div>
         ))}
       </div>

@@ -12,7 +12,6 @@ import { useCartStore } from '@/store/useCartStore'
 
 interface ProductCardProps {
   product: Product
-  onAddToCart?: (product: Product) => void
 }
 
 export const ProductCard: FC<ProductCardProps> = ({ product }) => {
